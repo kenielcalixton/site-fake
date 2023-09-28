@@ -1,0 +1,50 @@
+/** Section **/
+section{
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+    h2{
+        width: 100%;
+        font-size: 50px;
+        margin: 0;
+        @include font($font-primaria);
+        font-weight: bold;
+        color: $color1;
+    }
+}
+
+.servicos{
+    display: inline-block;
+    margin: 5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid $color2;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+        background: $color2;
+        color: $color-text;
+        padding: 40px;
+    }
+    &:hover img{
+        display: none;
+    }
+    &:hover .card-text{
+        display: none;
+    }
+    &:hover .texto-oculto{
+        display: block;
+    }
+}
+
+.texto-oculto{
+    display: none;
+}

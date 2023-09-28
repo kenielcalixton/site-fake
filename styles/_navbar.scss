@@ -1,0 +1,50 @@
+/** Navbar **/
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: $background;
+}
+.logo{
+    flex:20%;
+    text-align: left;
+    margin-left: 10%;
+    h1{
+        @include font($font-primaria);
+        color: $color1;
+        font-size: 34px;
+    }
+}
+
+.menu{
+    flex:70%;
+    text-align: right;
+    padding: 20px;
+    a{
+        color:$color1;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px 16px;
+    }
+    a:hover{
+        color: $color2;
+        border-top: 4px solid $color1;
+    }
+}
+
+#botao{
+    background: $color1;
+    padding: 10px 25px;
+    color: $color-text;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+    &:hover{
+        border: none;
+        background: $color2;
+    }
+}

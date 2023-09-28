@@ -1,0 +1,5 @@
+/** Body **/
+body{
+    margin: 0;
+    @include font($font-secundaria)
+}
